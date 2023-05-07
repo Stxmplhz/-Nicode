@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.nicode.BottomFragment.HomeFragment"
+        android:title="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_healtharticle"
+        android:name="com.example.nicode.BottomFragment.HealtharticleFragment"
+        android:title="Health Article"
+        tools:layout="@layout/fragment_healtharticle" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.example.nicode.BottomFragment.CommunityFragment"
+        android:title="Community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.nicode.Fragments.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.example.nicode.Fragments.NotificationFragment"
+        android:label="@string/title_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/navigation_privacyandpolicy"
+        android:name="com.example.nicode.Fragments.PrivacyandpolicyFragment"
+        android:label="@string/title_privacyandpolicy"
+        tools:layout="@layout/fragment_privacyandpolicy" />
+
+    <fragment
+        android:id="@+id/navigation_language"
+        android:name="com.example.nicode.Fragments.LanguageFragment"
+        android:label="@string/title_language"
+        tools:layout="@layout/fragment_language" />
+
+    <fragment
+        android:id="@+id/navigation_displayandsound"
+        android:name="com.example.nicode.Fragments.StatisticFragment"
+        android:label="@string/title_displayandsound"
+        tools:layout="@layout/fragment_displayandsound" />
+
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.example.nicode.Fragments.HelpFragment"
+        android:label="@string/title_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/navigation_aboutus"
+        android:name="com.example.nicode.Fragments.AboutusFragment"
+        android:label="@string/title_aboutus"
+        tools:layout="@layout/fragment_aboutus" />
+
+    <fragment
+        android:id="@+id/navigation_gift"
+        android:name="com.example.nicode.BottomFragment.GiftFragment"
+        android:label="@string/title_gift"
+        tools:layout="@layout/fragment_gift" />
+
+    <fragment
+        android:id="@+id/navigation_health"
+        android:name="com.example.nicode.BottomFragment.HealthFragment"
+        android:label="Health"
+        tools:layout="@layout/fragment_health" />
+
+
+</navigation>

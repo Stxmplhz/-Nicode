@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44C8BD"
+    tools:context=".BottomFragment.GiftFragment">
+
+    <ImageView
+        android:id="@+id/background_rewards"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:src="@drawable/tabforgift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="REWARD"
+        android:textSize="@dimen/_28sdp"
+        android:textColor="#466D68"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGiftText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background_rewards">
+
+        <TextView
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="center"
+            android:text="ของรางวัล &amp; สิทธิพิเศษ"
+            android:textColor="#466D68"
+            android:textSize="@dimen/_22ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutgift"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_136sdp"
+        android:background="#00BAAE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutGiftText">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/giftrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_124sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDonateText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutgift">
+
+        <TextView
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="center"
+            android:text="การบริจาค"
+            android:textColor="#466D68"
+            android:textSize="@dimen/_22ssp" /> />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutdonate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_136sdp"
+        android:background="#00BAAE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutDonateText">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/donaterecycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_124sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/background_ads"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:src="@drawable/tabforgift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutdonate" />
+
+    <ImageView
+        android:id="@+id/adbanner_image"
+        android:layout_width="370dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/adbanner"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutdonate" />
+
+    <ImageView
+        android:id="@+id/closeadbanner"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/closebutton"
+        app:layout_constraintBottom_toBottomOf="@+id/adbanner_image"
+        app:layout_constraintEnd_toEndOf="@+id/adbanner_image"
+        app:layout_constraintTop_toTopOf="@+id/adbanner_image"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/nicostatus_bar"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/nicocoinstatus_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nicocoin_Inbar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="6dp"
+        android:gravity="center"
+        android:textColor="#226E8A"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/nicostatus_bar"
+        app:layout_constraintEnd_toEndOf="@+id/nicostatus_bar"
+        app:layout_constraintTop_toTopOf="@+id/nicostatus_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

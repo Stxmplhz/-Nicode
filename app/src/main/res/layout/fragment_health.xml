@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44C8BD"
+    tools:context=".BottomFragment.HealthFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:src="@drawable/tabforgift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:text="HEALTH"
+        android:textColor="#DEFFE9"
+        android:textSize="@dimen/_28ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/lungicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/percent_health_text"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="90"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_32ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:text="%"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_28ssp"
+        app:layout_constraintStart_toStartOf="@+id/percent_health_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nicostatus_bar"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/nicocoinstatus_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nicocoin_Inbar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="6dp"
+        android:gravity="center"
+        android:textColor="#226E8A"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/nicostatus_bar"
+        app:layout_constraintEnd_toEndOf="@+id/nicostatus_bar"
+        app:layout_constraintTop_toTopOf="@+id/nicostatus_bar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_ability"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:progressDrawable="@drawable/progressforability"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/strokeforprogressability"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:text="ความเเม่นยำกิจกรรม"
+        android:textColor="#A1FEDC"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_lung"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:progressDrawable="@drawable/progressforlung"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/strokeforprogresshealth"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_72sdp"
+        android:layout_marginStart="42dp"
+        android:src="@drawable/smoker_lyzer_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintStart_toEndOf="@+id/progressBar_ability"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+
+    <TextView
+        android:id="@+id/smokinglyzer_value"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#2F5C66"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_bath"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_marginTop="24dp"
+        android:indeterminateOnly="false"
+        android:progress="10"
+        android:progressDrawable="@drawable/circle"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_ability" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="@dimen/_185sdp"
+        android:layout_height="@dimen/_185sdp"
+        android:indeterminateOnly="false"
+        android:progress="100"
+        android:progressDrawable="@drawable/circle2"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_bath"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_bath"
+        app:layout_constraintStart_toStartOf="@+id/progressBar_bath"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_bath" />
+
+    <ImageView
+        android:id="@+id/bathtab"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/bahticon"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_bath"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_bath"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/progressBar_bath"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_bath" />
+
+    <TextView
+        android:id="@+id/MoneySave_text"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        android:textColor="#2F5C66"
+        android:textSize="@dimen/_28ssp"
+        app:layout_constraintEnd_toEndOf="@+id/bathtab"
+        app:layout_constraintStart_toStartOf="@+id/bathtab"
+        app:layout_constraintTop_toBottomOf="@+id/bathtab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".Bluetooth.GetCoinActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70DED7">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="420dp"
+            android:layout_height="@dimen/_54sdp"
+            android:background="#44C8BD"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="@dimen/_128sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginTop="8dp"
+            android:text="COIN TASK "
+            android:textColor="#2F5C66"
+            android:textSize="@dimen/_28ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nicostatus_bar"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/nicocoinstatus_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nicocoin_inbar"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:textColor="#226E8A"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/nicostatus_bar"
+            app:layout_constraintEnd_toEndOf="@+id/nicostatus_bar"
+            app:layout_constraintTop_toTopOf="@+id/nicostatus_bar" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/getcoin_gifticon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/taskgiftzone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <ImageView
+            android:id="@+id/claimedImage"
+            android:layout_width="348dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/claimedbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/nicocoin_getcoin"
+            app:layout_constraintBottom_toBottomOf="@+id/claimedImage"
+            app:layout_constraintStart_toStartOf="@+id/claimedImage"
+            app:layout_constraintTop_toTopOf="@+id/claimedImage"
+            app:layout_constraintVertical_bias="0.404" />
+
+
+        <TextView
+            android:id="@+id/textClaimCoin"
+            android:layout_width="147dp"
+            android:layout_height="90dp"
+            android:text="คุณสูบบุหรี่ทั้งหมด X ครั้ง ซึ่งเกิน 3 ครั้ง คุณจึงไม่ได้รับNico Coin พยายามใหม่นะ เราเป็นกำลังใจให้คุณอยู่ข้างๆ :)"
+            android:textColor="#2F5C66"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/claimedImage"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/claimedImage" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="Claim"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/claimedImage"
+            app:layout_constraintEnd_toEndOf="@+id/claimedImage"
+            app:layout_constraintTop_toTopOf="@+id/claimedImage"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <ImageView
+            android:id="@+id/warningRedImage"
+            android:layout_width="348dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/missedbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/claimedImage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="Warning"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/warningRedImage"
+            app:layout_constraintEnd_toEndOf="@+id/warningRedImage"
+            app:layout_constraintTop_toTopOf="@+id/warningRedImage"
+            app:layout_constraintVertical_bias="0.464" />
+
+        <ImageView
+            android:id="@+id/warningRed"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/warningred"
+            app:layout_constraintBottom_toBottomOf="@+id/warningRedImage"
+            app:layout_constraintStart_toStartOf="@+id/warningRedImage"
+            app:layout_constraintTop_toTopOf="@+id/warningRedImage"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <ImageView
+            android:id="@+id/warningRedImageShadow"
+            android:layout_width="348dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/missedbutton_shadow"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/claimedImage" />
+
+        <TextView
+            android:id="@+id/textWarningRed"
+            android:layout_width="147dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:text="คุณสูบบุหรี่ทั้งหมด X ครั้ง ซึ่งเกิน 3 ครั้ง คุณจึงไม่ได้รับNico Coin พยายามใหม่นะ เราเป็นกำลังใจให้คุณอยู่ข้างๆ :)"
+            android:textColor="#820C0C"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/warningRedImage"
+            app:layout_constraintStart_toEndOf="@+id/warningRed"
+            app:layout_constraintTop_toTopOf="@+id/warningRedImage" />
+
+        <ImageView
+            android:id="@+id/warningYellow"
+            android:layout_width="348dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/warningbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warningRedImage" />
+
+        <TextView
+            android:id="@+id/textWarningYellow"
+            android:layout_width="147dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="6dp"
+            android:text="ระวังเกี่ยวกับควันบุหรี่รอบตัวของคุณซึ่งอาจส่งผลในการได้รับ Nico Coin ของคุณได้"
+            android:textColor="#A95C01"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/warningYellow"
+            app:layout_constraintStart_toEndOf="@+id/imageView29"
+            app:layout_constraintTop_toTopOf="@+id/warningYellow" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="Warning"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/warningYellow"
+            app:layout_constraintEnd_toEndOf="@+id/warningYellow"
+            app:layout_constraintTop_toTopOf="@+id/warningYellow"
+            app:layout_constraintVertical_bias="0.464" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="28dp"
+            android:src="@drawable/warningyellow"
+            app:layout_constraintBottom_toBottomOf="@+id/warningYellow"
+            app:layout_constraintStart_toStartOf="@+id/warningYellow"
+            app:layout_constraintTop_toTopOf="@+id/warningYellow"
+            app:layout_constraintVertical_bias="0.489" />
+
+        <ImageView
+            android:id="@+id/warningYellowShadow"
+            android:layout_width="348dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/warningbutton_shadow"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warningRedImage" />
+
+        <ImageView
+            android:id="@+id/claimedImageShadow"
+            android:layout_width="348dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/claimed_button_shadow"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+        <ImageView
+            android:id="@+id/ConnectBluetooth"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/connectbluetooth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="รับรางวัลประจำวัน"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/ConnectBluetooth"
+            app:layout_constraintEnd_toEndOf="@+id/ConnectBluetooth"
+            app:layout_constraintStart_toStartOf="@+id/ConnectBluetooth"
+            app:layout_constraintTop_toTopOf="@+id/ConnectBluetooth" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:background="#839BFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listDevices" />
+
+        <ImageView
+            android:id="@+id/listDevices"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/listview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/buttoningetcoin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ConnectBluetooth" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รายชื่ออุปกรณ์ที่เชื่อมได้"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/listDevices"
+            app:layout_constraintEnd_toEndOf="@+id/listDevices"
+            app:layout_constraintStart_toStartOf="@+id/listDevices"
+            app:layout_constraintTop_toTopOf="@+id/listDevices" />
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listDevices"
+            android:layout_alignBottom="@+id/listDevices"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:text="กดรายชื่ออุปกรณ์ เพื่อเชื่อมต่อBluetooth"
+            android:textColor="#07272D"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/listDevices"
+            app:layout_constraintStart_toEndOf="@+id/listDevices"
+            app:layout_constraintTop_toTopOf="@+id/listDevices" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

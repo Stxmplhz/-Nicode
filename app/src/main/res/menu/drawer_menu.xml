@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+       <item
+        android:id="@+id/navigation_account"
+        android:title="@string/title_account"/>
+
+        <item
+        android:id="@+id/navigation_statistic"
+        android:title="@string/title_dailystatic"/>
+
+        <item
+        android:id="@+id/navigation_nofitication"
+        android:title="@string/title_notification"/>
+
+       <item
+        android:id="@+id/navigation_privacyandpolicy"
+        android:title="@string/title_privacyandpolicy"/>
+
+       <item
+        android:id="@+id/navigation_help"
+        android:title="@string/title_help" />
+    </group>
+
+</menu>

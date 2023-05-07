@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "555183435137",
+    "firebase_url": "https://nicode-c425e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nicode-c425e",
+    "storage_bucket": "nicode-c425e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555183435137:android:6620642549cedec33d8c80",
+        "android_client_info": {
+          "package_name": "com.example.nicode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555183435137-kcu0k93c8hggs4bv8fc7ik27klok96gr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtnz_RU1tC-Qe8B_xK8LzmFowlJn6GHnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555183435137-kcu0k93c8hggs4bv8fc7ik27klok96gr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F5C66"
+    tools:context=".Account.ChangePersonalinfoActivity">
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:src="@drawable/tabforaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_Back"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/Update_profileImage"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        app:riv_oval="true" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cameraedit"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="108dp"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/camera_edit_icon"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/Update_profileImage"
+        app:layout_constraintTop_toTopOf="@+id/Update_profileImage" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="ชื่อบัญชีผู้ใช้"
+        android:textColor="#B0B6AE"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Update_profileImage" />
+
+    <EditText
+        android:id="@+id/Update_textUsername"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="ชื่อบัญชีผู้ใช้ใหม่ของคุณ"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="ที่อยู่"
+        android:textColor="#B0B6AE"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/Update_textUsername"
+        app:layout_constraintTop_toBottomOf="@+id/Update_textUsername" />
+
+    <EditText
+        android:id="@+id/Update_textAddress"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="ที่อยู่ใหม่ของคุณ"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="เบอร์โทรศัพท์"
+        android:textColor="#B0B6AE"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/Update_textAddress"
+        app:layout_constraintTop_toBottomOf="@+id/Update_textAddress" />
+
+    <EditText
+        android:id="@+id/Update_textPhonenumber"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="เบอร์โทรศัพท์ใหม่ของคุณ"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/ComfirmChangePersonalbtn"
+        android:layout_width="@dimen/_96sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/button_inaccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Update_textPhonenumber" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ยืนยัน"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/ComfirmChangePersonalbtn"
+        app:layout_constraintEnd_toEndOf="@+id/ComfirmChangePersonalbtn"
+        app:layout_constraintStart_toStartOf="@+id/ComfirmChangePersonalbtn"
+        app:layout_constraintTop_toTopOf="@+id/ComfirmChangePersonalbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Nicode</string>
+    <string name="title_home">Home</string>
+    <string name="title_coinstatus">Coin Status</string>
+    <string name="title_dailystatic">สถิติ</string>
+    <string name="title_gift">ของรางวัล &amp; สิทธิพิเศษ</string>
+
+
+    <string name="title_account">บัญชีผู้ใช้ของคุณ</string>
+    <string name="title_notification">การเเจ้งเตือน</string>
+    <string name="title_privacyandpolicy">ความเป็นส่วนตัว &amp; นโยบาย</string>
+    <string name="title_language">LANGUAGE</string>
+    <string name="title_displayandsound">DISPLAY &amp; SOUND</string>
+    <string name="title_help">การช่วยเหลือ</string>
+    <string name="title_aboutus">ABOUT US</string>
+
+    <string name="Open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="PandP">
+        <br><br><i><u> เงื่อนไขการบริการและนโยบายความเป็นส่วนตัว </u></i></br></br>
+    </string>
+
+    <string name="gift_giftfragment">รางวัล &amp; สิทธิพิเศษ</string>
+
+</resources>
